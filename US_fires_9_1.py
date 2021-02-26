@@ -36,8 +36,8 @@ map_data = [
         "marker": {
             "size": [0.03 * bright for bright in brightness],
             "color": brightness,
-            "colorscale": "Viridis",
-            "reversescale": True,
+            "colorscale": "Oryel",
+            "reversescale": False,
             "colorbar": {"title": "Brightness"},
         },
     }
