@@ -34,7 +34,7 @@ map_data = [
         "lon": longs,
         "lat": lats,
         "marker": {
-            "size": [0.5 * bright for bright in brightness],
+            "size": [0.03 * bright for bright in brightness],
             "color": brightness,
             "colorscale": "Viridis",
             "reversescale": True,
