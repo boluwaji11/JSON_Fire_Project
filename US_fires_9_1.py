@@ -23,10 +23,6 @@ for fires in fire_data:
     longs.append(long)
     lats.append(lat)
 
-print(brightness[:10])
-print(longs[:10])
-print(lats[:10])
-
 # Map Data and Format
 map_data = [
     {
@@ -48,3 +44,4 @@ figure = {"data": map_data, "layout": map_layout}
 
 # Show the map
 offline.plot(figure, filename="US_fires_9_1.html")
+print("The program ran successfully!")
