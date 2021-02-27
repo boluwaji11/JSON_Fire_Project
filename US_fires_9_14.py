@@ -3,11 +3,8 @@ from plotly.graph_objs import Scattergeo, Layout
 from plotly import offline
 
 infile = open("US_fires_9_14.json", "r")
-# outfile = open("readable_fires_9_1.json", "w")
 
 fire_data = json.load(infile)
-
-# json.dump(fire_data, outfile, indent=4)
 
 # Create empty list to hold the list of brightness, longitude and latitude
 brightness, longs, lats = [], [], []
