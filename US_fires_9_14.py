@@ -17,8 +17,8 @@ for fires in fire_data:
     if bright > 450:
         # Append to the empty list
         brightness.append(bright)
-    longs.append(long)
-    lats.append(lat)
+        longs.append(long)
+        lats.append(lat)
 
 # Map Data and Format
 map_data = [
@@ -27,9 +27,9 @@ map_data = [
         "lon": longs,
         "lat": lats,
         "marker": {
-            "size": [0.03 * bright for bright in brightness],
+            "size": [0.04 * bright for bright in brightness],
             "color": brightness,
-            "colorscale": "Solar",
+            "colorscale": "Viridis",
             "reversescale": True,
             "colorbar": {"title": "Brightness"},
         },
